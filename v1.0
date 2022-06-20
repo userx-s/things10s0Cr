@@ -1,1 +1,840 @@
-loadstring(game:HttpGet("https://pastebin.com/raw/QLkZ1Rdv", true))()
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local haskey = false
+local clocksgui = Instance.new("ScreenGui")
+local keysystem = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local mygui = Instance.new("TextLabel")
+local deco = Instance.new("Frame")
+local keysystem_2 = Instance.new("TextLabel")
+local NoExist = Instance.new("TextLabel")
+local loadgui = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local keyenter = Instance.new("TextBox")
+local UICorner_3 = Instance.new("UICorner")
+local keysystem_3 = Instance.new("TextLabel")
+local gui = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local mygui_2 = Instance.new("TextLabel")
+local deco_2 = Instance.new("Frame")
+local keysystem_4 = Instance.new("TextLabel")
+local gamekat = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local NoExist_2 = Instance.new("TextLabel")
+local gameuniversal = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local KAT = Instance.new("Frame")
+local owlhub = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local whatput = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local vg = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local opmenu = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local universal = Instance.new("Frame")
+local owlhu = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local vghu = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local setspeed = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local walkspeed = Instance.new("TextBox")
+local UICorner_14 = Instance.new("UICorner")
+local jumppower = Instance.new("TextBox")
+local UICorner_15 = Instance.new("UICorner")
+local setjumppower = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local fly = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local susmenuthing = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local explorer = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local saveloadpos = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local loadpos = Instance.new("TextLabel")
+local savepos = Instance.new("TextLabel")
+local gamedahood = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
+local amogus = Instance.new("Frame")
+local UICorner_23 = Instance.new("UICorner")
+local sus = Instance.new("ImageLabel")
+local welcome = Instance.new("TextLabel")
+local text = Instance.new("TextLabel")
+local freemeganeon = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local mfr = Instance.new("ImageLabel")
+local chugjug = Instance.new("TextButton")
+local UICorner_25 = Instance.new("UICorner")
+local chugjug_2 = Instance.new("ImageLabel")
+local closemenu = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+local open = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
+local Dahood = Instance.new("Frame")
+local owlhubhood = Instance.new("TextButton")
+local UICorner_28 = Instance.new("UICorner")
+local rayx = Instance.new("TextButton")
+local UICorner_29 = Instance.new("UICorner")
+local dahoodvg = Instance.new("TextButton")
+local UICorner_30 = Instance.new("UICorner")
+local faded = Instance.new("TextButton")
+local UICorner_31 = Instance.new("UICorner")
+local LEAKED = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local L_leaker = Instance.new("TextLabel")
+local open_2 = Instance.new("TextButton")
+local UICorner_32 = Instance.new("UICorner")
+local close = Instance.new("TextButton")
+local UICorner_33 = Instance.new("UICorner")
+
+--Properties:
+
+clocksgui.Name = "clocksgui"
+clocksgui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+clocksgui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+keysystem.Name = "key system"
+keysystem.Parent = clocksgui
+keysystem.BackgroundColor3 = Color3.fromRGB(105, 198, 255)
+keysystem.Position = UDim2.new(0.584199667, 0, 0.142131969, 0)
+keysystem.Size = UDim2.new(0, 275, 0, 147)
+
+UICorner.Parent = keysystem
+
+mygui.Name = "mygui"
+mygui.Parent = keysystem
+mygui.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mygui.BackgroundTransparency = 1.000
+mygui.BorderSizePixel = 0
+mygui.Position = UDim2.new(0.0327272713, 0, 0.0612244904, 0)
+mygui.Size = UDim2.new(0, 105, 0, 26)
+mygui.Font = Enum.Font.Cartoon
+mygui.Text = "Clock's GUI"
+mygui.TextColor3 = Color3.fromRGB(0, 0, 0)
+mygui.TextSize = 19.000
+
+deco.Name = "deco"
+deco.Parent = keysystem
+deco.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+deco.BorderSizePixel = 2
+deco.Position = UDim2.new(0.0327272713, 0, 0.0544217601, 0)
+deco.Size = UDim2.new(0, 0, 0, 77)
+
+keysystem_2.Name = "keysystem"
+keysystem_2.Parent = keysystem
+keysystem_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+keysystem_2.BackgroundTransparency = 1.000
+keysystem_2.BorderSizePixel = 0
+keysystem_2.Position = UDim2.new(0.0363636315, 0, 0.197278932, 0)
+keysystem_2.Size = UDim2.new(0, 104, 0, 32)
+keysystem_2.Font = Enum.Font.Cartoon
+keysystem_2.Text = "Key System"
+keysystem_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+keysystem_2.TextSize = 19.000
+
+NoExist.Name = "NoExist"
+NoExist.Parent = keysystem
+NoExist.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NoExist.BackgroundTransparency = 1.000
+NoExist.BorderSizePixel = 0
+NoExist.Position = UDim2.new(0.141818225, 0, 0.673469305, 0)
+NoExist.Size = UDim2.new(0, 172, 0, 26)
+NoExist.Visible = false
+NoExist.Font = Enum.Font.Cartoon
+NoExist.Text = "Key Doesnt Exist!"
+NoExist.TextColor3 = Color3.fromRGB(255, 0, 0)
+NoExist.TextSize = 24.000
+
+loadgui.Name = "loadgui"
+loadgui.Parent = keysystem
+loadgui.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+loadgui.Position = UDim2.new(0.549090862, 0, 0.346938729, 0)
+loadgui.Size = UDim2.new(0, 111, 0, 35)
+loadgui.Font = Enum.Font.SourceSans
+loadgui.Text = "Load Gui"
+loadgui.TextColor3 = Color3.fromRGB(0, 0, 0)
+loadgui.TextSize = 14.000
+
+UICorner_2.Parent = loadgui
+
+keyenter.Name = "keyenter"
+keyenter.Parent = keysystem
+keyenter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+keyenter.Position = UDim2.new(0.443636358, 0, 0.0612244606, 0)
+keyenter.Size = UDim2.new(0, 140, 0, 31)
+keyenter.Font = Enum.Font.SourceSans
+keyenter.Text = "Type Key"
+keyenter.TextColor3 = Color3.fromRGB(0, 0, 0)
+keyenter.TextSize = 12.000
+
+UICorner_3.Parent = keyenter
+
+keysystem_3.Name = "keysystem"
+keysystem_3.Parent = keysystem
+keysystem_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+keysystem_3.BackgroundTransparency = 1.000
+keysystem_3.BorderSizePixel = 0
+keysystem_3.Position = UDim2.new(0.0654545426, 0, 0.360544205, 0)
+keysystem_3.Size = UDim2.new(0, 104, 0, 32)
+keysystem_3.Font = Enum.Font.Cartoon
+keysystem_3.Text = "Private OP Gui"
+keysystem_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+keysystem_3.TextSize = 19.000
+
+gui.Name = "gui"
+gui.Parent = clocksgui
+gui.BackgroundColor3 = Color3.fromRGB(105, 198, 255)
+gui.Position = UDim2.new(0.15280664, 0, 0.0913705528, 0)
+gui.Size = UDim2.new(0, 446, 0, 248)
+gui.Visible = false
+UICorner_4.Parent = gui
+
+mygui_2.Name = "mygui"
+mygui_2.Parent = gui
+mygui_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mygui_2.BackgroundTransparency = 1.000
+mygui_2.BorderSizePixel = 0
+mygui_2.Position = UDim2.new(0.0327272713, 0, 0.0612244904, 0)
+mygui_2.Size = UDim2.new(0, 105, 0, 26)
+mygui_2.Font = Enum.Font.Cartoon
+mygui_2.Text = "Clock's GUI"
+mygui_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+mygui_2.TextSize = 19.000
+
+deco_2.Name = "deco"
+deco_2.Parent = gui
+deco_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+deco_2.BorderSizePixel = 2
+deco_2.Position = UDim2.new(0.0327272639, 0, 0.0564516112, 0)
+deco_2.Size = UDim2.new(0, 0, 0, 54)
+
+keysystem_4.Name = "keysystem"
+keysystem_4.Parent = gui
+keysystem_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+keysystem_4.BackgroundTransparency = 1.000
+keysystem_4.BorderSizePixel = 0
+keysystem_4.Position = UDim2.new(-0.015205875, 0, 0.148891836, 0)
+keysystem_4.Size = UDim2.new(0, 104, 0, 32)
+keysystem_4.Font = Enum.Font.Cartoon
+keysystem_4.Text = "Enjoy!"
+keysystem_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+keysystem_4.TextSize = 19.000
+
+gamekat.Name = "gamekat"
+gamekat.Parent = gui
+gamekat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gamekat.Position = UDim2.new(0.488666892, 0, 0.0636657625, 0)
+gamekat.Size = UDim2.new(0, 59, 0, 35)
+gamekat.Font = Enum.Font.SourceSans
+gamekat.Text = "KAT"
+gamekat.TextColor3 = Color3.fromRGB(0, 0, 0)
+gamekat.TextSize = 14.000
+gamekat.MouseButton1Click:Connect(function()
+	universal.Visible = false
+	KAT.Visible = true
+	Dahood.Visible = false
+end)
+UICorner_5.Parent = gamekat
+
+NoExist_2.Name = "NoExist"
+NoExist_2.Parent = gui
+NoExist_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NoExist_2.BackgroundTransparency = 1.000
+NoExist_2.BorderSizePixel = 0
+NoExist_2.Position = UDim2.new(0.141818225, 0, 0.673469305, 0)
+NoExist_2.Size = UDim2.new(0, 172, 0, 26)
+NoExist_2.Visible = false
+NoExist_2.Font = Enum.Font.Cartoon
+NoExist_2.Text = "Key Doesnt Exist!"
+NoExist_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+NoExist_2.TextSize = 24.000
+loadgui.MouseButton1Click:Connect(function()
+	if keyenter.Text == "zoinks" then
+		keysystem.Visible = false
+		gui.Visible = true
+		haskey = true
+	else
+		NoExist.Visible = true
+		wait(2)
+		NoExist.Visible = false
+	end
+end)
+
+
+gameuniversal.Name = "gameuniversal"
+gameuniversal.Parent = gui
+gameuniversal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gameuniversal.Position = UDim2.new(0.82050544, 0, 0.0556012429, 0)
+gameuniversal.Size = UDim2.new(0, 73, 0, 35)
+gameuniversal.Font = Enum.Font.SourceSans
+gameuniversal.Text = "universal"
+gameuniversal.TextColor3 = Color3.fromRGB(0, 0, 0)
+gameuniversal.TextSize = 14.000
+gameuniversal.MouseButton1Click:Connect(function()
+	universal.Visible = true
+	KAT.Visible = false
+	Dahood.Visible = false
+end)
+UICorner_6.Parent = gameuniversal
+
+KAT.Name = "KAT"
+KAT.Parent = gui
+KAT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KAT.BackgroundTransparency = 1.000
+KAT.BorderSizePixel = 0
+KAT.Position = UDim2.new(0, 0, 0.277924091, 0)
+KAT.Size = UDim2.new(0, 446, 0, 179)
+KAT.Visible = false
+gameuniversal.MouseButton1Click:Connect(function()
+	universal.Visible = false
+	KAT.Visible = true
+	Dahood.Visible = false
+end)
+
+owlhub.Name = "owlhub"
+owlhub.Parent = KAT
+owlhub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+owlhub.Position = UDim2.new(0.116469651, 0, 0.0596335232, 0)
+owlhub.Size = UDim2.new(0, 111, 0, 35)
+owlhub.Font = Enum.Font.SourceSans
+owlhub.Text = "OwlHub"
+owlhub.TextColor3 = Color3.fromRGB(0, 0, 0)
+owlhub.TextSize = 14.000
+--OwlHub Function is already used
+
+UICorner_7.Parent = owlhub
+
+whatput.Name = "whatput"
+whatput.Parent = KAT
+whatput.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+whatput.Position = UDim2.new(0.39449653, 0, 0.294270396, 0)
+whatput.Size = UDim2.new(0, 111, 0, 35)
+whatput.Font = Enum.Font.SourceSans
+whatput.Text = "does nothing"
+whatput.TextColor3 = Color3.fromRGB(0, 0, 0)
+whatput.TextSize = 14.000
+
+UICorner_8.Parent = whatput
+
+vg.Name = "vg"
+vg.Parent = KAT
+vg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+vg.Position = UDim2.new(0.116469651, 0, 0.294270396, 0)
+vg.Size = UDim2.new(0, 111, 0, 35)
+vg.Font = Enum.Font.SourceSans
+vg.Text = "V.G Hub"
+vg.TextColor3 = Color3.fromRGB(0, 0, 0)
+vg.TextSize = 14.000
+vg.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+end)
+
+UICorner_9.Parent = vg
+
+opmenu.Name = "opmenu"
+opmenu.Parent = KAT
+opmenu.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+opmenu.Position = UDim2.new(0.39449656, 0, 0.0596335232, 0)
+opmenu.Size = UDim2.new(0, 111, 0, 35)
+opmenu.Font = Enum.Font.SourceSans
+opmenu.Text = "op menu"
+opmenu.TextColor3 = Color3.fromRGB(0, 0, 0)
+opmenu.TextSize = 14.000
+opmenu.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://pastebin.com/raw/LrGn7DC5'))()
+end)
+
+UICorner_10.Parent = opmenu
+
+universal.Name = "universal"
+universal.Parent = gui
+universal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+universal.BackgroundTransparency = 1.000
+universal.BorderSizePixel = 0
+universal.Position = UDim2.new(0, 0, 0.277924091, 0)
+universal.Size = UDim2.new(0, 446, 0, 179)
+universal.Visible = false
+
+owlhu.Name = "owlhu"
+owlhu.Parent = universal
+owlhu.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+owlhu.Position = UDim2.new(0.459518969, 0, 0.0596335232, 0)
+owlhu.Size = UDim2.new(0, 111, 0, 35)
+owlhu.Font = Enum.Font.SourceSans
+owlhu.Text = "OwlHub"
+owlhu.TextColor3 = Color3.fromRGB(0, 0, 0)
+owlhu.TextSize = 14.000
+owlhu.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()
+end)
+owlhub.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()
+end)
+UICorner_11.Parent = owlhu
+
+vghu.Name = "vghu"
+vghu.Parent = universal
+vghu.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+vghu.Position = UDim2.new(0.414675921, 0, 0.344549745, 0)
+vghu.Size = UDim2.new(0, 124, 0, 35)
+vghu.Font = Enum.Font.SourceSans
+vghu.Text = "V.G Hub (some games)"
+vghu.TextColor3 = Color3.fromRGB(0, 0, 0)
+vghu.TextSize = 14.000
+vghu.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+end)
+
+UICorner_12.Parent = vghu
+
+local playerk = game.Players.LocalPlayer
+
+setspeed.Name = "setspeed"
+setspeed.Parent = universal
+setspeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+setspeed.Position = UDim2.new(0.73530376, 0, 0.763544202, 0)
+setspeed.Size = UDim2.new(0, 111, 0, 35)
+setspeed.Font = Enum.Font.SourceSans
+setspeed.Text = "Set Walkspeed"
+setspeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+setspeed.TextSize = 14.000
+setspeed.MouseButton1Click:Connect(function()
+	playerk.Character.Humanoid.WalkSpeed = walkspeed.Text
+end)
+
+UICorner_13.Parent = setspeed
+
+walkspeed.Name = "walkspeed"
+walkspeed.Parent = universal
+walkspeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+walkspeed.Position = UDim2.new(0.73530364, 0, 0.599247575, 0)
+walkspeed.Size = UDim2.new(0, 110, 0, 29)
+walkspeed.Font = Enum.Font.SourceSans
+walkspeed.Text = "Enter Walkspeed"
+walkspeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+walkspeed.TextSize = 12.000
+
+UICorner_14.Parent = walkspeed
+
+jumppower.Name = "jumppower"
+jumppower.Parent = universal
+jumppower.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+jumppower.Position = UDim2.new(0.464003205, 0, 0.599247575, 0)
+jumppower.Size = UDim2.new(0, 110, 0, 29)
+jumppower.Font = Enum.Font.SourceSans
+jumppower.Text = "Enter Jumppower"
+jumppower.TextColor3 = Color3.fromRGB(0, 0, 0)
+jumppower.TextSize = 12.000
+
+UICorner_15.Parent = jumppower
+
+setjumppower.Name = "setjumppower"
+setjumppower.Parent = universal
+setjumppower.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+setjumppower.Position = UDim2.new(0.464003325, 0, 0.763544202, 0)
+setjumppower.Size = UDim2.new(0, 111, 0, 35)
+setjumppower.Font = Enum.Font.SourceSans
+setjumppower.Text = "Set Jumppower"
+setjumppower.TextColor3 = Color3.fromRGB(0, 0, 0)
+setjumppower.TextSize = 14.000
+setjumppower.MouseButton1Click:Connect(function()
+	playerk.Character.Humanoid.JumpPower = jumppower.Text
+end)
+
+UICorner_16.Parent = setjumppower
+
+fly.Name = "fly"
+fly.Parent = universal
+fly.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+fly.Position = UDim2.new(0.730819464, 0, 0.0596336126, 0)
+fly.Size = UDim2.new(0, 111, 0, 35)
+fly.Font = Enum.Font.SourceSans
+fly.Text = "fly (might work)"
+fly.TextColor3 = Color3.fromRGB(0, 0, 0)
+fly.TextSize = 14.000
+fly.MouseButton1Click:Connect(function()
+	                          -- GUI --
+	loadstring(game:HttpGet("https://pastebin.com/raw/1cAaPf8J"))()
+	                          -- FLY --
+	loadstring(game:HttpGet("https://pastebin.com/raw/E3Ep5Cke"))()
+end)
+UICorner_17.Parent = fly
+
+susmenuthing.Name = "susmenuthing"
+susmenuthing.Parent = universal
+susmenuthing.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+susmenuthing.Position = UDim2.new(0.733061612, 0, 0.344549835, 0)
+susmenuthing.Size = UDim2.new(0, 111, 0, 35)
+susmenuthing.Font = Enum.Font.SourceSans
+susmenuthing.Text = "among us menu"
+susmenuthing.TextColor3 = Color3.fromRGB(0, 0, 0)
+susmenuthing.TextSize = 14.000
+
+UICorner_18.Parent = susmenuthing
+
+explorer.Name = "explorer"
+explorer.Parent = universal
+explorer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+explorer.Position = UDim2.new(0.194945037, 0, 0.054047022, 0)
+explorer.Size = UDim2.new(0, 111, 0, 35)
+explorer.Font = Enum.Font.SourceSans
+explorer.Text = "Dex Explorer"
+explorer.TextColor3 = Color3.fromRGB(0, 0, 0)
+explorer.TextSize = 14.000
+explorer.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/BtPiJ9SJ"))()
+end)
+
+UICorner_19.Parent = explorer
+saveloadpos.Name = "saveloadpos"
+saveloadpos.Parent = universal
+saveloadpos.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+saveloadpos.Position = UDim2.new(0.094048202, 0, 0.489801168, 0)
+saveloadpos.Size = UDim2.new(0, 128, 0, 35)
+saveloadpos.Font = Enum.Font.SourceSans
+saveloadpos.Text = "Save/Load POS "
+saveloadpos.TextColor3 = Color3.fromRGB(0, 0, 0)
+saveloadpos.TextSize = 14.000
+saveloadpos.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/d6YfjsYP"))()
+end)
+
+UICorner_20.Parent = saveloadpos
+
+loadpos.Name = "loadpos"
+loadpos.Parent = universal
+loadpos.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+loadpos.BackgroundTransparency = 1.000
+loadpos.BorderSizePixel = 0
+loadpos.Position = UDim2.new(0.120171219, 0, 0.835418046, 0)
+loadpos.Size = UDim2.new(0, 105, 0, 26)
+loadpos.Font = Enum.Font.Cartoon
+loadpos.Text = "press [ to load pos"
+loadpos.TextColor3 = Color3.fromRGB(0, 0, 0)
+loadpos.TextSize = 14.000
+
+savepos.Name = "savepos"
+savepos.Parent = universal
+savepos.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+savepos.BackgroundTransparency = 1.000
+savepos.BorderSizePixel = 0
+savepos.Position = UDim2.new(0.120171219, 0, 0.76283741, 0)
+savepos.Size = UDim2.new(0, 105, 0, 26)
+savepos.Font = Enum.Font.Cartoon
+savepos.Text = "press ] to save pos"
+savepos.TextColor3 = Color3.fromRGB(0, 0, 0)
+savepos.TextSize = 14.000
+
+gamedahood.Name = "gamedahood"
+gamedahood.Parent = gui
+gamedahood.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gamedahood.Position = UDim2.new(0.643375397, 0, 0.0556012429, 0)
+gamedahood.Size = UDim2.new(0, 73, 0, 35)
+gamedahood.Font = Enum.Font.SourceSans
+gamedahood.Text = "Da Hood"
+gamedahood.TextColor3 = Color3.fromRGB(0, 0, 0)
+gamedahood.TextSize = 14.000
+gamedahood.MouseButton1Click:Connect(function()
+	universal.Visible = false
+	KAT.Visible = false
+	Dahood.Visible = true
+end)
+
+UICorner_21.Parent = gamedahood
+
+TextButton.Name = "?"
+TextButton.Parent = gui
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(0.331716239, 0, 0.0636657625, 0)
+TextButton.Size = UDim2.new(0, 59, 0, 35)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "?"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+TextButton.MouseButton1Click:Connect(function()
+	TextButton.Text = "??"
+	wait(0.5)
+	TextButton.Text = "???"
+	wait(0.5)
+	TextButton.Text = "?"
+	wait(0.5)
+	TextButton.Text = "??"
+	wait(0.5)
+	TextButton.Text = "???"
+	wait(0.5)
+	TextButton.Text = "?"
+end)
+
+
+UICorner_22.Parent = TextButton
+
+amogus.Name = "amogus"
+amogus.Parent = gui
+amogus.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+amogus.Position = UDim2.new(0.96556592, 0, 0.203721195, 0)
+amogus.Size = UDim2.new(0, 219, 0, 248)
+amogus.Visible = false
+susmenuthing.MouseButton1Click:Connect(function()
+	amogus.Visible = true
+end)
+
+UICorner_23.Parent = amogus
+
+sus.Name = "sus"
+sus.Parent = amogus
+sus.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+sus.BackgroundTransparency = 1.000
+sus.BorderSizePixel = 0
+sus.Position = UDim2.new(-0.0502283089, 0, 0, 0)
+sus.Size = UDim2.new(0, 79, 0, 44)
+sus.Image = "http://www.roblox.com/asset/?id=9642943402"
+
+welcome.Name = "welcome"
+welcome.Parent = amogus
+welcome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+welcome.BackgroundTransparency = 1.000
+welcome.BorderSizePixel = 0
+welcome.Position = UDim2.new(0.267899156, 0, 0.0480853952, 0)
+welcome.Size = UDim2.new(0, 104, 0, 32)
+welcome.Font = Enum.Font.Cartoon
+welcome.Text = "welcome"
+welcome.TextColor3 = Color3.fromRGB(0, 0, 0)
+welcome.TextSize = 19.000
+
+text.Name = "text"
+text.Parent = amogus
+text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+text.BackgroundTransparency = 1.000
+text.BorderSizePixel = 0
+text.Position = UDim2.new(0.249634326, 0, -0.000301703811, 0)
+text.Size = UDim2.new(0, 104, 0, 32)
+text.Font = Enum.Font.Cartoon
+text.Text = "clocks sus gui"
+text.TextColor3 = Color3.fromRGB(0, 0, 0)
+text.TextSize = 19.000
+
+freemeganeon.Name = "freemeganeon"
+freemeganeon.Parent = amogus
+freemeganeon.BackgroundColor3 = Color3.fromRGB(202, 26, 26)
+freemeganeon.Position = UDim2.new(0.251141548, 0, 0.270161271, 0)
+freemeganeon.Size = UDim2.new(0, 110, 0, 24)
+freemeganeon.Font = Enum.Font.SourceSans
+freemeganeon.Text = "free mega neon"
+freemeganeon.TextColor3 = Color3.fromRGB(0, 0, 0)
+freemeganeon.TextSize = 14.000
+freemeganeon.MouseButton1Click:Connect(function()
+	mfr.Visible = true
+end)
+
+UICorner_24.Parent = freemeganeon
+
+mfr.Name = "mfr"
+mfr.Parent = freemeganeon
+mfr.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mfr.BackgroundTransparency = 1.000
+mfr.BorderSizePixel = 0
+mfr.Position = UDim2.new(4.88730717, 0, -15.6854839, 0)
+mfr.Size = UDim2.new(0, 79, 0, 59)
+mfr.Visible = false
+mfr.Image = "http://www.roblox.com/asset/?id=7269753411"
+
+chugjug.Name = "chugjug"
+chugjug.Parent = amogus
+chugjug.BackgroundColor3 = Color3.fromRGB(202, 26, 26)
+chugjug.Position = UDim2.new(0.287671208, 0, 0.528225899, 0)
+chugjug.Size = UDim2.new(0, 88, 0, 24)
+chugjug.Font = Enum.Font.SourceSans
+chugjug.Text = "chugjug"
+chugjug.TextColor3 = Color3.fromRGB(0, 0, 0)
+chugjug.TextSize = 14.000
+chugjug.MouseButton1Click:Connect(function()
+	chugjug_2.Visible = true
+end)
+
+UICorner_25.Parent = chugjug
+
+chugjug_2.Name = "chugjug"
+chugjug_2.Parent = chugjug
+chugjug_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+chugjug_2.BackgroundTransparency = 1.000
+chugjug_2.BorderSizePixel = 0
+chugjug_2.Position = UDim2.new(5.09412622, 0, -19.10215, 0)
+chugjug_2.Size = UDim2.new(0, 79, 0, 92)
+chugjug_2.Visible = false
+chugjug_2.Image = "http://www.roblox.com/asset/?id=2767093608"
+
+closemenu.Name = "closemenu"
+closemenu.Parent = amogus
+closemenu.BackgroundColor3 = Color3.fromRGB(202, 26, 26)
+closemenu.Position = UDim2.new(0.284488916, 0, 0.399193645, 0)
+closemenu.Size = UDim2.new(0, 90, 0, 24)
+closemenu.Font = Enum.Font.SourceSans
+closemenu.Text = "close menu"
+closemenu.TextColor3 = Color3.fromRGB(0, 0, 0)
+closemenu.TextSize = 14.000
+closemenu.MouseButton1Click:Connect(function()
+	open.Visible = true
+	amogus.Visible = false
+end)
+
+UICorner_26.Parent = closemenu
+
+open.Name = "open"
+open.Parent = amogus
+open.BackgroundColor3 = Color3.fromRGB(202, 26, 26)
+open.Position = UDim2.new(0.319634765, 0, -0.399193406, 0)
+open.Size = UDim2.new(0, 88, 0, 24)
+open.Font = Enum.Font.SourceSans
+open.Text = "sus menu"
+open.TextColor3 = Color3.fromRGB(0, 0, 0)
+open.TextSize = 14.000
+susmenuthing.MouseButton1Click:Connect(function()
+	open.Visible = false
+	amogus.Visible = true
+end)
+
+UICorner_27.Parent = open
+
+Dahood.Name = "Dahood"
+Dahood.Parent = gui
+Dahood.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Dahood.BackgroundTransparency = 1.000
+Dahood.BorderSizePixel = 0
+Dahood.Position = UDim2.new(0, 0, 0.277924091, 0)
+Dahood.Size = UDim2.new(0, 446, 0, 179)
+Dahood.Visible = false
+
+
+owlhubhood.Name = "owlhubhood"
+owlhubhood.Parent = Dahood
+owlhubhood.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+owlhubhood.Position = UDim2.new(0.244272366, 0, 0.0596335642, 0)
+owlhubhood.Size = UDim2.new(0, 135, 0, 35)
+owlhubhood.Font = Enum.Font.SourceSans
+owlhubhood.Text = "OwlHub (might work)"
+owlhubhood.TextColor3 = Color3.fromRGB(0, 0, 0)
+owlhubhood.TextSize = 14.000
+owlhub.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()
+end)
+
+UICorner_28.Parent = owlhubhood
+
+rayx.Name = "rayx"
+rayx.Parent = Dahood
+rayx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+rayx.Position = UDim2.new(0.582837343, 0, 0.305443615, 0)
+rayx.Size = UDim2.new(0, 136, 0, 35)
+rayx.Font = Enum.Font.SourceSans
+rayx.Text = "RAYX (work?)"
+rayx.TextColor3 = Color3.fromRGB(0, 0, 0)
+rayx.TextSize = 14.000
+rayx.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua'))()
+end)
+
+UICorner_29.Parent = rayx
+
+dahoodvg.Name = "dahoodvg"
+dahoodvg.Parent = Dahood
+dahoodvg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+dahoodvg.Position = UDim2.new(0.582837403, 0, 0.059633553, 0)
+dahoodvg.Size = UDim2.new(0, 124, 0, 35)
+dahoodvg.Font = Enum.Font.SourceSans
+dahoodvg.Text = "V.G Hub (not good)"
+dahoodvg.TextColor3 = Color3.fromRGB(0, 0, 0)
+dahoodvg.TextSize = 14.000
+dahoodvg.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+end)
+
+UICorner_30.Parent = dahoodvg
+
+faded.Name = "faded"
+faded.Parent = Dahood
+faded.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+faded.Position = UDim2.new(0.0693844631, 0, 0.059633553, 0)
+faded.Size = UDim2.new(0, 71, 0, 35)
+faded.Font = Enum.Font.SourceSans
+faded.Text = "Faded"
+faded.TextColor3 = Color3.fromRGB(0, 0, 0)
+faded.TextSize = 14.000
+faded.MouseButton1Click:Connect(function()
+	_G.Toggles = "V"
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+end)
+
+UICorner_31.Parent = faded
+
+LEAKED.Name = "LEAKED"
+LEAKED.Parent = clocksgui
+LEAKED.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LEAKED.Size = UDim2.new(0, 962, 0, 591)
+LEAKED.Visible = false
+
+ImageLabel.Parent = LEAKED
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.198544696, 0, 0.54653132, 0)
+ImageLabel.Size = UDim2.new(0, 569, 0, 173)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=7518209706"
+
+L_leaker.Name = "L_leaker"
+L_leaker.Parent = ImageLabel
+L_leaker.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+L_leaker.BackgroundTransparency = 1.000
+L_leaker.BorderSizePixel = 0
+L_leaker.Position = UDim2.new(0.329648495, 0, -0.678773463, 0)
+L_leaker.Size = UDim2.new(0, 172, 0, 26)
+L_leaker.Font = Enum.Font.Cartoon
+L_leaker.Text = "you used a leaked key how embarrasing"
+L_leaker.TextColor3 = Color3.fromRGB(255, 0, 0)
+L_leaker.TextSize = 50.000
+
+open_2.Name = "open"
+open_2.Parent = clocksgui
+open_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+open_2.Position = UDim2.new(0.91174382, 0, 0.0704339445, 0)
+open_2.Size = UDim2.new(0, 59, 0, 20)
+open_2.Font = Enum.Font.SourceSans
+open_2.Text = "open"
+open_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+open_2.TextSize = 14.000
+open_2.MouseButton1Click:Connect(function()
+	if haskey == true then
+		gui.Visible = true
+		open_2.Visible = false
+		close.Visible = true
+	else
+		keysystem.Visible = true
+		open_2.Visible = false
+		close.Visible = true
+	end
+end)
+
+UICorner_32.Parent = open_2
+
+close.Name = "close"
+close.Parent = clocksgui
+close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+close.Position = UDim2.new(0.912783325, 0, 0.03659302, 0)
+close.Size = UDim2.new(0, 59, 0, 20)
+close.Font = Enum.Font.SourceSans
+close.Text = "close"
+close.TextColor3 = Color3.fromRGB(0, 0, 0)
+close.TextSize = 14.000
+close.MouseButton1Click:Connect(function()
+	gui.Visible = false
+	keysystem.Visible = false
+	open_2.Visible = true
+	close.Visible = false
+end)
+
+UICorner_33.Parent = close
